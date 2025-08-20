@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="description" content="Quarterly Earnings Report Presentation">
+  <meta name="author" content="Technical Consultant">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/monokai.min.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h2>Quarterly Earnings Report</h2>
+        <p>A presentation for our stakeholders.</p>
+        <p>
+          <small>Presented by<br>
+          <a href="mailto:23f1000733@ds.study.iitm.ac.in">23f1000733@ds.study.iitm.ac.in</a>
+          </small>
+        </p>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Quarterly Highlights
+          * Revenue up by 15% year-over-year.
+          * <!-- .element: class="fragment" --> New customer acquisition grew by 20%.
+          * <!-- .element: class="fragment" --> Successful launch of our new product line.
+          * <!-- .element: class="fragment" --> Operating margin increased by 5%.
+
+          <aside class="notes">
+            These are the key achievements for this quarter. We will go into more detail on each of these points in the following slides.
+          </aside>
+        </script>
+      </section>
+
+      <section>
+        <h3>Financial Performance</h3>
+        <p>Our financial results show strong growth and profitability.</p>
+        <ul>
+          <li class="fragment">Net Income: $5M</li>
+          <li class="fragment">Earnings Per Share (EPS): $1.25</li>
+          <li class="fragment">Return on Equity (ROE): 15%</li>
+        </ul>
+        <aside class="notes">
+          The financial performance this quarter has exceeded our expectations. The increase in net income is primarily due to higher sales volumes and operational efficiencies.
+        </aside>
+      </section>
+
+      <section>
+        <h3>Code Sample: Revenue Projection</h3>
+        <pre><code class="language-python" data-line-numbers="1-5">
+          def project_revenue(current_revenue, growth_rate):
+            return current_revenue * (1 + growth_rate)
+
+          # Example usage
+          projected = project_revenue(1000000, 0.05)
+          print(f"Projected Revenue: ${projected:,.2f}")
+        </code></pre>
+        <aside class="notes">
+          This Python code snippet illustrates the simple model we use for revenue projections. It takes the current revenue and a growth rate to predict future revenue. This helps in our financial planning and forecasting.
+        </aside>
+      </section>
+
+      <section>
+        <h3>Financial Formulas</h3>
+        <p>The **Net Profit Margin** is calculated as:</p>
+        <p>
+          \[ \text{Net Profit Margin} = \frac{\text{Net Income}}{\text{Revenue}} \times 100\% \]
+        </p>
+        <aside class="notes">
+          Here we see the formula for Net Profit Margin. This is a key indicator of our profitability. A higher net profit margin indicates that the company is more efficient at converting revenue into actual profit.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Q&A Session</h2>
+        <p>Thank you. We will now take your questions.</p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+      // More options here
+    });
+  </script>
+</body>
+</html>
